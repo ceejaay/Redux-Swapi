@@ -18,12 +18,11 @@ class CharacterListView extends React.Component {
 
   render() {
     if (this.props.fetching) {
-      <h2>Fetching data...</h2>
+     return <h2>Fetching data...</h2>
       // return something here to indicate that you are fetching data
     }
     return (
       <div className="CharactersList_wrapper">
-      characters should be here
         <CharacterList characters={this.props.characters} />
       </div>
     )

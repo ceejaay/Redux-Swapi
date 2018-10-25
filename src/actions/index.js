@@ -17,7 +17,7 @@ export const getCharacters = () => dispatch => {
   axios
     .get('https://swapi.co/api/people/')
     //this could be it. I changed it from ({data})
-    .then(data => {
+    .then(({data}) => {
       dispatch({
         type: SUCCESS,
         payload: data.results
